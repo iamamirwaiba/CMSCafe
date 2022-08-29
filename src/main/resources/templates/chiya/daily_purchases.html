@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<!-- Mirrored from colorlib.com/polygon/admindek/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Dec 2019 16:07:52 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+  <th:block th:insert="common/header :: header"/>
+</head>
+
+<body>
+
+<div class="loader-bg">
+  <div class="loader-bar"></div>
+</div>
+
+<div id="pcoded" class="pcoded">
+  <div class="pcoded-overlay-box"></div>
+  <div class="pcoded-container navbar-wrapper">
+    <th:block th:insert="common/logout::logout"/>
+
+    <div class="pcoded-main-container">
+      <div class="pcoded-wrapper">
+        <th:block th:insert="common/sidebar::sidebar"/>
+        <div class="pcoded-content">
+
+          <div class="page-header card">
+            <div class="row align-items-end">
+              <div class="col-lg-8">
+                <div class="page-header-title">
+                  <i class="fas fa-home bg-cust-red"></i>
+                  <div class="d-inline">
+                    <h5>Dahsboard</h5>
+                    <span>Chiya Aagan</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <hr>
+            <div class="page-header-breadcrumb">
+              <ul class="breadcrumb breadcrumb-title" style="float:left;">
+                <li class="breadcrumb-item">
+                  <a th:href="@{/}"><i class="feather icon-home"></i></a>
+                </li>
+                <li class="breadcrumb-item"><a th:href="@{/}">Dashboard</a> </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="pcoded-inner-content">
+
+            <div class="main-body">
+              <div class="page-wrapper">
+
+                <div class="page-body">
+                  <div class="row">
+                    <!-- Chart section -->
+                    <div class="col-md-6 col-xl-4">
+                      <div class="card sale-card">
+                        <div class="card-header" id="category-header" style="background-color: lightsteelblue">
+                          <h5>Category</h5>
+                        </div>
+                        <div>
+                          <table name="Category" id="category_table" class="table table-hover text-center">
+                            <tbody>
+                            <tr>
+                              <td>1. Snacks </td>
+                            </tr>
+
+                            <tr>
+                              <td>2. Juice </td>
+                            </tr>
+
+                            <tr>
+                              <td>3. Fast Food</td>
+                            </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="card sale-card">
+                        <div class="card-header" id="menu-header">
+                          <h5>Food Menu</h5>
+
+                        </div>
+                        <div>
+                          <table name="Category" id="menu-table" class="table table-hover text-center" style="text-align: center">
+                            <thead style="background-color: lightsteelblue; text-align: center">
+                            <tr>
+                              <th style="text-align: center"> Item </th>
+                              <th style="text-align: center"> Price </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                              <td> Momo </td>
+                              <td> 150 </td>
+                            </tr>
+
+                            <tr>
+                              <td> Juice </td>
+                              <td> 100 </td>
+                            </tr>
+
+                            <tr>
+                              <td> French Fries </td>
+                              <td> 150 </td>
+                            </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <!-- Chart section -->
+                  </div>
+
+                </div>
+
+                <a th:href="@{/add-item-menu}" type="button" class="btn btn-info" >Add Item</a>
+
+              </div>
+            </div>
+
+            <div id="styleSelector">
+            </div>
+          </div>
+        </div>
+
+        <div id="styleSelector">
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Public Key Modal Popup -->
+<div class="modal fade client-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-body">
+        <h3 class="mb-2"><b>Public Key</b></h3>
+        <p>1d0ca97aee713d3dcc3d36b5da1f5a8001110db8819718ac1f711b58970a01f1</p>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Public Key Modal Popup -->
+
+<!-- Private Key Modal Popup -->
+<div class="modal fade client-modal" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-body">
+        <h3 class="mb-2"><b>Private Key</b></h3>
+        <p>key4</p>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script>
+  var username="[[${username}]]"
+  window.localStorage.setItem("username",username);
+</script>
+<!-- Private Key Modal Popup -->
+
+
+<th:block th:insert="common/footer:: footer"/>
+</body>
+
+<!-- Mirrored from colorlib.com/polygon/admindek/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Dec 2019 16:08:25 GMT -->
+
+</html>

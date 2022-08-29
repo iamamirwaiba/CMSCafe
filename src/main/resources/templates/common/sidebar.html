@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+
+  <th:block th:fragment="sidebar">
+
+    <nav class="pcoded-navbar">
+      <div class="nav-list">
+        <div class="pcoded-inner-navbar main-menu">
+          <ul class="pcoded-item pcoded-left-item">
+            <li class="active">
+              <a th:href="@{/}" class="waves-effect waves-dark">
+              <span class="pcoded-micon"><i class="fas fa-home"></i></span>
+              <span class="pcoded-mtext">Chiya Aagan Dashboard</span>
+              </a>
+            </li>
+
+            <li class="active">
+              <a th:href="@{/category}" class="waves-effect waves-dark">
+                <span class="pcoded-micon"><i class="fas fa-home"></i></span>
+                <span class="pcoded-mtext">Category </span>
+              </a>
+            </li>
+            <li class="active">
+              <a th:href="@{/employee-page}" class="waves-effect waves-dark">
+                <span class="pcoded-micon"><i class="fas fa-home"></i></span>
+                <span class="pcoded-mtext">Employee Details </span>
+              </a>
+            </li>
+            <li class="active">
+              <a th:href="@{/menu/}" class="waves-effect waves-dark">
+                <span class="pcoded-micon"><i class="fas fa-home"></i></span>
+                <span class="pcoded-mtext">Menu</span>
+              </a>
+            </li>
+
+            <li class="active">
+              <a th:href="@{/due/}" class="waves-effect waves-dark">
+                <span class="pcoded-micon"><i class="fas fa-home"></i></span>
+                <span class="pcoded-mtext">Dues</span>
+              </a>
+            </li>
+<!--          <li class="">-->
+<!--            <a href="component.html" class="waves-effect waves-dark">-->
+<!--              <span class="pcoded-micon"><i class="far fa-lightbulb"></i></span>-->
+<!--              <span class="pcoded-mtext">Components</span>-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li class="">-->
+<!--            <a href="client.html" class="waves-effect waves-dark">-->
+<!--              <span class="pcoded-micon"><i class="far fa-user"></i></span>-->
+<!--              <span class="pcoded-mtext">Client</span>-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li class="">-->
+<!--            <a href="project.html" class="waves-effect waves-dark">-->
+<!--              <span class="pcoded-micon"><i class="fas fa-tasks"></i></span>-->
+<!--              <span class="pcoded-mtext">Project</span>-->
+<!--            </a>-->
+<!--          </li>-->
+
+<!--          <li class="">-->
+<!--            <a href="indices.html" class="waves-effect waves-dark">-->
+<!--              <span class="pcoded-micon"><i class="far fa-envelope"></i></span>-->
+<!--              <span class="pcoded-mtext">ES Indices</span>-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li class="">-->
+<!--            <a href="users.html" class="waves-effect waves-dark">-->
+<!--              <span class="pcoded-micon"><i class="fas fa-users"></i></span>-->
+<!--              <span class="pcoded-mtext">Users</span>-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li class="">-->
+<!--            <a href="roles.html" class="waves-effect waves-dark">-->
+<!--              <span class="pcoded-micon"><i class="fas fa-user"></i></span>-->
+<!--              <span class="pcoded-mtext">Roles</span>-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li class="">-->
+<!--            <a href="tokens.html" class="waves-effect waves-dark">-->
+<!--              <span class="pcoded-micon"><i class="fas fa-ticket-alt"></i></span>-->
+<!--              <span class="pcoded-mtext">Tokens</span>-->
+<!--            </a>-->
+<!--          </li>-->
+
+<!--          <li class="pcoded-hasmenu" dropdown-icon="style1" subitem-icon="style1">-->
+<!--            <a href="javascript:void(0)" class="waves-effect waves-dark">-->
+<!--              <span class="pcoded-micon"><i class="fas fa-cogs"></i></span>-->
+<!--              <span class="pcoded-mtext">Settings</span>-->
+<!--            </a>-->
+<!--            <ul class="pcoded-submenu">-->
+<!--              <li class="">-->
+<!--                <a href="setting-user.html" class="waves-effect waves-dark">-->
+<!--                  <span class="pcoded-mtext">Users</span>-->
+<!--                </a>-->
+<!--              </li>-->
+<!--              <li class="">-->
+<!--                <a href="setting-roles.html" class="waves-effect waves-dark">-->
+<!--                  <span class="pcoded-mtext">Roles</span>-->
+<!--                </a>-->
+<!--              </li>-->
+<!--              <li class="">-->
+<!--                <a href="setting-user-roles.html" class="waves-effect waves-dark">-->
+<!--                  <span class="pcoded-mtext">User Roles</span>-->
+<!--                </a>-->
+<!--              </li>-->
+<!--            </ul>-->
+<!--          </li>-->
+<!--          <hr>-->
+<!--          <li class="pcoded-hasmenu" dropdown-icon="style1" subitem-icon="style1">-->
+<!--            <a href="javascript:void(0)" class="waves-effect waves-dark">-->
+<!--              <span class="pcoded-micon"><i class="fab fa-connectdevelop"></i></span>-->
+<!--              <span class="pcoded-mtext">Preference</span>-->
+<!--            </a>-->
+<!--            <ul class="pcoded-submenu">-->
+<!--              <li class="">-->
+<!--                <a href="encryption-key.html" class="waves-effect waves-dark">-->
+<!--                  <div class="form-check form-switch d-flex align-items-center">-->
+
+<!--                    <input class="form-check-input dark-mode" type="checkbox" id="flexSwitchCheckChecked" checked>-->
+<!--                    <label class="form-check-label" for="flexSwitchCheckChecked">Dark Mode</label>-->
+<!--                  </div>-->
+<!--                </a>-->
+<!--              </li>-->
+<!--            </ul>-->
+<!--          </li>-->
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  </th:block>
+
+</body>
+</html>
